@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="wrapper swiper">
+        <div class="slide-content">
+        <div class="carousel swiper-wrapper">
+            <img src="bg1.jpg" alt="" class="swiper-slide">
+            <img src="bg2.jpg" alt="" class="swiper-slide">
+            <img src="bg3.jpg" alt="" class="swiper-slide">
+            <img src="bg4.webp" alt="" class="swiper-slide">
+            <img src="bg5.jpeg" alt="" class="swiper-slide">
+            <img src="bg6.jpg" alt="" class="swiper-slide">
+            <img src="bg7.webp" alt="" class="swiper-slide">
+            <img src="bg8.png" alt="" class="swiper-slide">
+        </div>
+        <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+</div>
+    </div>
+<script src="swiper-bundle.min.js"></script>
+<script>
+        var swiper = new Swiper(".slide-content", {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          slidesPerGroup: 3,
+          loop: true,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          breakpoints:{
+            0:{
+                slidesPerView:1,
+                slidesPerGroup: 1,
+            },
+            520:{
+                slidesPerView:2,
+                slidesPerGroup: 2,
+            },
+            950:{
+                slidesPerView:3,
+                slidesPerGroup: 3,
+            }, 
+          },
+        });
+      </script>
+
+</body>
+</html>

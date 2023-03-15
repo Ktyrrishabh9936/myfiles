@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.wrapper .carousel{
+    white-space: nowrap;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #32323f;
+}
+.wrapper{
+    padding: 12px;
+    max-width: 1200px;
+    overflow-x: hidden;
+}
+img{
+    height: 340px;
+    width: calc(99%/3);
+    object-fit: cover;
+    margin-left: 10px;
+}
+.carousel:first-child{
+    margin-left: 10px;
+}
+@media screen and (max-width:900px){
+    .carousel img {
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width:500px){
+    .carousel img {
+        width: 100%;
+    }
+}

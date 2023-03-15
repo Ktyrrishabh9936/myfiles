@@ -1,0 +1,293 @@
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        /* .carousel{
+            display: flex;
+            height: 100%;
+        }
+        .container{
+            max-width: 1200px;
+        }
+        .card{
+            width: calc(100vw / 3);
+            object-fit: cover;
+        } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="carousel slide" id="demo" data-ride="carousel">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1" ></li>
+            <li data-target="#demo" data-slide-to="2" ></li>
+          </ul>
+          <div class="container carousel-inner no-padding">
+            <div class="carousel-item active ">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-3 col-sm-3 col-md-3">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card with stretched link</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#demo" class="carousel-control-prev" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</a>
+<a href="#demo" class="carousel-control-next" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE Html>
+<Html Lang="En" Dir="Ltr">
+<Head>
+<Meta Charset="Utf-8">
+<Title>Responsive Owl-Carousel Slider</Title>
+<Style Media="Screen">
+  @Import Url('Https://Fonts.Googleapis.Com/Css?Family=Poppins:400,500,600,700&Display=Swap');
+  *{
+  Margin: 0;
+  Padding: 0;
+  Box-Sizing: Border-Box;
+  Font-Family: 'Poppins', Sans-Serif;
+  }
+  Body{
+  Min-Height: 100vh;
+  Display: Flex;
+  Align-Items: Center;
+  }
+  .Wrapper{
+  Width: 100%;
+  }
+  .Carousel{
+  Max-Width: 1200px;
+  Margin: Auto;
+  Padding: 0 30px;
+  }
+  .Carousel .Card{
+  Color: #Fff;
+  Text-Align: Center;
+  Margin: 20px 0;
+  Line-Height: 250px;
+  Font-Size: 90px;
+  Font-Weight: 600;
+  Border-Radius: 10px;
+  Box-Shadow: 0px 4px 15px Rgba(0,0,0,0.2);
+  }
+  .Carousel .Card-1{
+  Background: #Ed1c24;
+  }
+  .Carousel .Card-2{
+  Background: #0072bc;
+  }
+  .Carousel .Card-3{
+  Background: #39b54a;
+  }
+  .Carousel .Card-4{
+  Background: #F26522;
+  }
+  .Carousel .Card-5{
+  Background: #630460;
+  }
+  .Owl-Dots{
+  Text-Align: Center;
+  Margin-Top: 40px;
+  }
+  .Owl-Dot{
+  Height: 15px;
+  Width: 45px;
+  Margin: 0 5px;
+  Outline: None;
+  Border-Radius: 14px;
+  Border: 2px Solid #0072bc!Important;
+  Box-Shadow: 0px 4px 15px Rgba(0,0,0,0.2);
+  Transition: All 0.3s Ease;
+  }
+  .Owl-Dot.Active,
+  .Owl-Dot:hover{
+  Background: #0072bc!Important;
+  }
+  .Carousel .Card-1 {
+    Background: #Ed1c24;
+}
+
+.Carousel .Card-2 {
+    Background: #0072bc;
+}
+
+.Carousel .Card-3 {
+    Background: #39b54a;
+}
+
+.Carousel .Card-4 {
+    Background: #F26522;
+}
+
+.Carousel .Card-5 {
+    Background: #630460;
+}
+
+.Owl-Dots {
+    Text-Align: Center;
+    Margin-Top: 40px;
+}
+
+.Owl-Dot {
+    Height: 15px;
+    Width: 45px;
+    Margin: 0 5px;
+    Outline: None;
+    Border-Radius: 14px;
+    Border: 2px Solid #0072bc!Important;
+    Box-Shadow: 0px 4px 15px Rgba(0, 0, 0, 0.2);
+    Transition: All 0.3s Ease;
+}
+.Wrapper {
+    Width: 100%;
+}
+
+.Carousel {
+    Max-Width: 1200px;
+    Margin: Auto;
+    Padding: 0 30px;
+}
+
+.Carousel .Card {
+    Color: #Fff;
+    Text-Align: Center;
+    Margin: 20px 0;
+    Line-Height: 250px;
+    Font-Size: 90px;
+    Font-Weight: 600;
+    Border-Radius: 10px;
+    Box-Shadow: 0px 4px 15px Rgba(0, 0, 0, 0.2);
+}
+Body {
+    Min-Height: 100vh;
+    Display: Flex;
+    Align-Items: Center;
+}
+
+.Owl-Dot.Active,
+.Owl-Dot:hover {
+    Background: #0072bc!Important;
+}
+  </Style>
+<Meta Name="Viewport" Content="Width=Device-Width, Initial-Scale=1.0">
+<Script Src="Https://Code.Jquery.Com/Jquery-3.5.1.Js"></Script>
+<Script Src="Https://Cdnjs.Cloudflare.Com/Ajax/Libs/OwlCarousel2/2.3.4/Owl.Carousel.Min.Js"></Script>
+<Link Rel="Stylesheet" Href="Https://Cdnjs.Cloudflare.Com/Ajax/Libs/OwlCarousel2/2.3.4/Assets/Owl.Carousel.Min.Css">
+</Head>
+<Body>
+<Div Class="Wrapper">
+<Div Class="Carousel Owl-Carousel">
+<Div Class="Card Card-1">
+A
+</Div>
+<Div Class="Card Card-2">
+B
+</Div>
+<Div Class="Card Card-3">
+C
+</Div>
+<Div Class="Card Card-4">
+D
+</Div>
+<Div Class="Card Card-5">
+E
+</Div>
+</Div>
+</Div>
+</Body>
+<Script>
+  $(".Carousel").OwlCarousel({
+  Margin: 20,
+  Loop: True,
+  Autoplay: True,
+  AutoplayTimeout: 2000,
+  AutoplayHoverPause: True,
+  Responsive: {
+  0:{
+  Items:1,
+  Nav: False
+  },
+  600:{
+  Items:2,
+  Nav: False
+  },
+  1000:{
+  Items:3,
+  Nav: False
+  }
+  }
+  });
+  </Script>
+</Html>

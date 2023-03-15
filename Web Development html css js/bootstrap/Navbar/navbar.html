@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./navbar.css">
+    <script src="https://kit.fontawesome.com/a92ab74aff.js" crossorigin="anonymous"></script>
+    <title>Navbar Design</title>
+</head>
+<body>
+    <div class="mainbody light">
+    <div class="container">
+        <div class="navbar"></div>
+        <div class="sidebar-head p-2">
+            <div class="hamburger" id = "ham">
+                <i class="fa fa-bars" style="font-size:35px;"></i>
+            </div>  
+        <div class="flex logos">
+        <div class="logo-item ">
+            <img src="./img/logo.png" height = "50" alt="" class="logo">
+        </div>
+        <div class="side-detail">
+            <h3>DeepMark</h3>
+            <p>Portfolio</p>
+        </div>
+        </div>
+        </div>
+        <div class="menu-item">
+            <ul>
+                <li><a><i class="fa-solid fa-house" style="font-size:24px"></i><p>Home</p> </a></li>
+                <li><a><i class="fa fa-address-book" style="font-size:24px"></i><p>About</p> </a></li>
+                <li><a><i class="fas fa-phone-square-alt" style="font-size:24px"></i><p>Contact</p> </a></li>
+                <li><a><i class="fas fa-bell" style="font-size:24px"></i><p>Announcement</p> </a></li>
+                <!-- <li><a><i class="fa fa-file" style="font-size:24px"></i><p>file</p> </a></li> -->
+                <li><a><i class="fa fa-truck" style="font-size:24px"></i><p>Delivery</p> </a></li>
+                <li class ="payment"><a><i class="fa fa-dollar" style="font-size:24px"></i><p class="lipad">payment</p> </a></li>
+                <li id= "modeicon" class = "check"><a><i id="modetoggle" class="fas fa-sun" style="font-size:24px"></i><p>DarkMode</p></a></li> 
+                <!-- <li><a><i class="fa-solid fa-sun" style="font-size:24px"></i><p>Dark Mode</p> </a></li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="website-section">
+        <!-- <span class="toggle"></span> -->
+        <nav id="navbar">
+            <div class="left">
+                <input type="search" name="searcher" id="searcher">
+                <label for="search"><i class="fas fa-search" style="font-size:24px"></i><button id = "search" style="visibility: hidden;"></button></label>
+            </div>
+        </nav>
+    </div>
+</div>
+</body>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script src="./navbar.js"></script>
+</html>

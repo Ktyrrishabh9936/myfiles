@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a92ab74aff.css" crossorigin="anonymous">
+
+    <title>signup</title>
+</head>
+<body>
+    <div class="Register-page">
+        <div class="login-panel">
+            <div class="login">
+                <h1>SignUp Into Property Dealer</h1>
+                <form action="">
+                    <div class="propic">
+                        <label for="profile" >
+                            <div class="piclabel">
+                                <img src="/img/cam.png" alt="" height="20">
+                                <span>Change Picture</span>
+                            </div>
+                            <img src="/img/candiate.jpg" alt="" id="candidate">
+                        </label>
+                        <input type="file" id = "profile" onchange="loadfile(event)">
+                    </div>
+                    <div class="take">
+                    <input type="text" name="" id="" placeholder="First Name" >
+                    <input type="text" placeholder="Second Name">
+                    <input type="tel" placeholder="Moblie Number">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="text" placeholder="Address">
+                </div>
+                <button type="submit">Submit</button>
+                </form>
+                <div class="otherdetails">
+                    <p>Alredy have an Account <a href="/login">Login Here</a> </p>
+                    <a href="">Resend OTP</a>
+                </div>
+                <div class="followlink">
+                    <a href="http://"><i class="fa fa-github-alt"></i></a><a href="http://"><i class="fa fa-facebook-official fa-3x"></i></a><a href="http://"><i class="fa fa-telegram'"></i></a>
+                    <a href="http://"><i class="fa fa-github-alt"></i> </a><a href="http://"><i class="fa fa-github-alt"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+<script src="https://kit.fontawesome.com/a92ab74aff.js" crossorigin="anonymous"></script>
+</html>

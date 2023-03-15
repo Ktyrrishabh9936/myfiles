@@ -1,0 +1,70 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #32323C;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.text{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+.option{
+    font-size: 60px;
+    font-weight: 400;
+    color: #face30;
+    height:90px;
+    margin: 15px;
+    overflow: hidden;
+    line-height: 90px;
+}
+.option li{
+    list-style: none;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.option li span{
+    position: relative;
+    width: 100%;
+    line-height: 90px;
+    overflow-x: hidden;
+}
+li span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1111;
+    border-right: 3px Solid white;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    /* 35%,78%{
+        /* left: calc(110%+40px); */
+    /* } */
+    100%{
+        left: 0px;
+        width: 100%;
+    }
+}
